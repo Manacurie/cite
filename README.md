@@ -1,7 +1,7 @@
 # Docker-Jekyll
 @andsju
 
-A repository to setup a Docker environment using Jekyll - a static site generator.
+A repository to setup a Docker environment using Jekyll - a static site generator. 
 
 ## Step 1
 Clone this repo.
@@ -30,21 +30,18 @@ Jekyll site content resides inside folder named *app*.
 │   about.md
 │   index.md
 │   _config.yml
-│
 ├───assets
 │   ├───css
 │   │       style.css
 │   │
 │   └───images
 │           Jekyll_Logo.png
-│
 ├───_includes
 │       header.html
-│
 ├───_layouts
 │       default.html
-│
 └───_posts
 ```
+
 Visit Jekyll and find out how this generator works.
 https://jekyllrb.com/ 
