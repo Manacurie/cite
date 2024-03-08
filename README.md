@@ -45,3 +45,35 @@ Jekyll site content resides inside folder named *app*.
 
 Visit Jekyll and find out how this generator works.
 https://jekyllrb.com/ 
+
+
+---
+---
+
+## Jekyll GitHub Pages site
+
+Create your own personal site using [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
+Copy all content inside **app** folder to your personal repo, and you are ready to use Jekyll.  
+
+
+
+
+## Jekyll Web Hosting 
+
+(tested on a public cloud server host)
+
+Following commands can be used to setup a simple Jekyll site from command line. This will use the current server public IP.
+
+```bash
+# debian:11-slim
+apt-get update
+apt-get install -y build-essential zlib1g-dev ruby-dev curl
+gem install jekyll bundler
+cd /usr/src
+jekyll new site
+cd site
+jekyll serve -d /site -B -H 0.0.0.0 -P 80
+```
+
+Better - use nginx as a proxy server, passing port 80 requests to Jekylls default port 4000 
