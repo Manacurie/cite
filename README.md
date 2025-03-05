@@ -77,3 +77,4 @@ jekyll serve -d /site -B -H 0.0.0.0 -P 80
 ```
 
 Better - use nginx as a proxy server, passing port 80 requests to Jekylls default port 4000 
+# cite
