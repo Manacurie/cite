@@ -1,7 +1,10 @@
-<header>
-    My site header
-</header>
-<hr>
+<header>My site header</header>
+<hr />
 <nav>
-    <a href="/">Start</a> | <a href="/about">About</a>
- </nav>
+    <!-- <a href="/">Start</a> | <a href="/about">About</a> -->
+
+
+    {% for item in site.pages -%}
+    <a href="{{item.url}}">{{item.url}}</a> |
+    {%- endfor %}
+</nav>
